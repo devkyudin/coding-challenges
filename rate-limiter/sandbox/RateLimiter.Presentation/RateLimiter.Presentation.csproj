@@ -23,8 +23,6 @@
     </ItemGroup>
     <ItemGroup>
         <Folder Include="Controllers\"/>
-        <Folder Include="EventListeners\"/>
-        <Folder Include="Jobs\"/>
     </ItemGroup>
 
 
