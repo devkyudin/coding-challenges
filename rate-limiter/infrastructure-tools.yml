@@ -1,0 +1,17 @@
+version: "3.8"
+name: "infrastructure-tools"
+services:
+  kafka-ui:
+    container_name: "kafka-ui"
+    image: "provectuslabs/kafka-ui:v0.7.1"
+    ports:
+      - "8080:8080"
+    networks:
+      - "communal-network"
+    environment:
+      DYNAMIC_CONFIG_ENABLED: "false"
+      KAFKA_CLUSTERS_0_NAME: "infrastructure-services-kafka"
+      KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: "kafka:9092"
+networks:
+  communal-network:
+    name: "communal"

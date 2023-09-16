@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <ItemGroup>
+        <PackageReference Include="xunit.runner.visualstudio"/>
+        <PackageReference Include="Microsoft.NET.Test.Sdk"/>
+        <PackageReference Include="coverlet.collector"/>
+        <PackageReference Include="AutoFixture"/>
+        <PackageReference Include="FluentAssertions"/>
+    </ItemGroup>
+</Project>
